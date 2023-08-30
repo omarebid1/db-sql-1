@@ -1,0 +1,23 @@
+es.1 :
+		SELECT * FROM students WHERE YEAR(date_of_birth) = 1990 ;
+
+es.2 :
+		SELECT * FROM courses WHERE cfu > 10 ;
+
+es.3 :
+		SELECT * FROM students WHERE (DATEDIFF('2023-08-30',date_of_birth)/365) > 30 ;
+
+es.4 : 
+		SELECT * FROM courses WHERE period = 'I semestre' AND year = 1 ;
+
+es.5 :
+		SELECT * FROM exams e WHERE date = '2020-06-20' AND HOUR(hour) >= 14 ;
+
+es.6 :
+		SELECT * FROM degrees d WHERE name LIKE '%Magistrale%' ;
+
+es.7 :
+		SELECT COUNT(id) AS 'n. Departments' FROM departments d ;
+
+es.8 :
+		SELECT COUNT(*) FROM teachers t WHERE phone IS NULL ;
